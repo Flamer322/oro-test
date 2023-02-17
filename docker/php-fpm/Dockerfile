@@ -14,6 +14,10 @@ RUN apk add --no-cache postgresql-dev bash coreutils unzip icu \
     && docker-php-ext-install pdo pdo_pgsql intl \
     && docker-php-ext-enable pdo_pgsql intl
 
+RUN apk add --no-cache libxml2-dev \
+    && docker-php-ext-install soap \
+    && docker-php-ext-enable soap
+
 RUN apk add --no-cache freetype libpng libjpeg-turbo freetype-dev libpng-dev libjpeg-turbo-dev libzip-dev && \
    docker-php-ext-configure gd \
        --with-freetype=/usr/include/ \

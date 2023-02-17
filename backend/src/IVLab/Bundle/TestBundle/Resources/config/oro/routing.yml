@@ -1,0 +1,1 @@
+category_controller:  resource: "@IVLabTestBundle/Controller/CategoryController.php"  type: annotation

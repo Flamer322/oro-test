@@ -1,0 +1,1 @@
+<?phpnamespace IVLab\Bundle\TestBundle;use Symfony\Component\HttpKernel\Bundle\Bundle;class IVLabTestBundle extends Bundle{}

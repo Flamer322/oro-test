@@ -1,0 +1,1 @@
+navigation:  menu_config:    items:      category_list:        label: Categories        route: test_category_index      tree:      application_menu:        children:          dashboard_tab:            children:              category_list: ~
